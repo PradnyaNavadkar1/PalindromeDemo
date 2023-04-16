@@ -1,22 +1,28 @@
 package com.test.demo.palindrome;
 
 public class PalindromeDemo {
-public static void main(String[] args) {
-String str = "Radar";
-String reverseStr = "";
-    
-    int strLength = str.length();
+public boolean isPalindrome(String inputString) {
 
-    for (int i = (strLength - 1); i >=0; --i) {
-      reverseStr = reverseStr + str.charAt(i);
-    }
-
-    if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
-      System.out.println(str + " is a Palindrome String.");
-    }
-    else {
-      System.out.println(str + " is not a Palindrome String.");
-    }
-  }
+if(inputString.length()==0) {
+	return true;
+	
+}else {
+	String rev="";
+	int length=inputString.length();
+	
+	for(int i=length-1; i>=0;i--) {
+		rev=rev+inputString.charAt(i);
+		if(inputString.equals(rev)) {
+			return true;
+		}
+		}
+	}
+		
+	
+return false;
+	
+	
+	
+}
 }
 

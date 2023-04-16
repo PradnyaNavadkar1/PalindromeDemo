@@ -10,8 +10,7 @@ class ConcateTest {
 	void testMain() {
 		
 		PalindromeDemo demo=new PalindromeDemo();
-		System.out.println("this is palindrome string");
-		System.out.println("test is running .programme is correct");
+		assertTrue(demo.isPalindrome("madam"));
 		
 	}
 
